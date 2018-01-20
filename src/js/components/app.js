@@ -1,29 +1,21 @@
 import React from 'react';
 import ParallaxBackground from './parallax_background.js';
+import NotifyWhenSeen from './wrappers/notify_when_seen.js';
 
 import '../../css/components/app.css';
 
 export default class App extends React.Component {
     render() {
-        let testStyle = {
-            position: 'relative',
-            height: '100px',
-            width: '100%'
-        };
-
         return <div className='app'>
-            <ParallaxBackground href='img/test_bg_1.jpg' diff='500px'/>
+            <ParallaxBackground href='img/test_bg_1.jpg'/>
 
-            <div style={testStyle}>TESTING TESTING</div>
-            <div style={testStyle}/>
-            <div style={testStyle}/>
-            <div style={testStyle}/>
-            <div style={testStyle}/>
-            <div style={testStyle}/>
-            <div style={testStyle}/>
-            <div style={testStyle}/>
-            <div style={testStyle}/>
-            <div style={testStyle}/>
+            <div className='app-content'>
+                <div className='page-block'></div>
+
+                <NotifyWhenSeen>
+                    <div> Testing testing. </div>
+                </NotifyWhenSeen>
+            </div>
         </div>;
     }
 };

@@ -4,3 +4,12 @@
     padding:0;
     box-sizing:border-box;
 }
+
+.app-content {
+    position: relative;
+}
+
+.page-block {
+    height: 150%;
+    width: 100%;
+}

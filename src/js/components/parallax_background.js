@@ -3,7 +3,8 @@ import React from 'react';
 import '../../css/components/parallax_background.css';
 
 /**
- * Parallax background component.
+ * Parallax background component using a fixed full-viewport div and
+ * background-position. Takes the following props:
  *     props.href: URL to the background image.
  */
 export default class ParallaxBackground extends React.Component {
@@ -18,7 +19,7 @@ export default class ParallaxBackground extends React.Component {
     }
 
     componentDidMount() {
-        window.onscroll = this.handleScroll;
+        window.addEventListener('scroll', this.handleScroll);
     }
 
     handleScroll() {
@@ -33,8 +34,6 @@ export default class ParallaxBackground extends React.Component {
             backgroundPosition: `0px -${this.state.scrollTop * 0.1}px`
         };
 
-        return <div className='parallax-background' style={style}>
-            {this.props.children}
-        </div>;
+        return <div className='parallax-background' style={style}/>;
     }
 };
