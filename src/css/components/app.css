@@ -13,3 +13,29 @@
     height: 150%;
     width: 100%;
 }
+
+/* Testing the transition when seen code. */
+@keyframes enlarge {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+.test-unseen {
+    position: absolute;
+    opacity: 1;
+    color: white;
+}
+
+.test-seen {
+    position: absolute;
+    color: white;
+    animation-name: enlarge;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}

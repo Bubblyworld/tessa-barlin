@@ -47,16 +47,10 @@ export default class NotifyWhenSeen extends React.Component {
 
         var decoratedChildren = React.Children.map(
             this.props.children,
-            child => {
-                // You can't pass props to DOM element types.
-                if (React.Component.isPrototypeOf(child)) {
-                    return React.cloneElement(child, childProps);
-                } else {
-                    return child
-                };
-            }
+            child => React.cloneElement(child, childProps)
         );
 
+        // Wrap in div to provide a dom element to test on.
         return <div>
             {decoratedChildren}
         </div>;

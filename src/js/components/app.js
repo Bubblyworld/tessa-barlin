@@ -1,6 +1,6 @@
 import React from 'react';
 import ParallaxBackground from './parallax_background.js';
-import NotifyWhenSeen from './wrappers/notify_when_seen.js';
+import TransitionWhenSeen from './wrappers/transition_when_seen.js';
 
 import '../../css/components/app.css';
 
@@ -12,9 +12,9 @@ export default class App extends React.Component {
             <div className='app-content'>
                 <div className='page-block'></div>
 
-                <NotifyWhenSeen>
+                <TransitionWhenSeen seen='test-seen' unseen='test-unseen'>
                     <div> Testing testing. </div>
-                </NotifyWhenSeen>
+                </TransitionWhenSeen>
             </div>
         </div>;
     }
