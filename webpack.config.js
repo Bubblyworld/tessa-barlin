@@ -3,6 +3,8 @@ const path = require('path');
 const config = {
     entry: './src/index.js',
 
+    devtool: 'source-map',
+
     output: {
         path: path.resolve('build'),
         filename: 'bundle.js',
@@ -23,7 +25,17 @@ const config = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ]
             }
         ]
     }
