@@ -3,9 +3,27 @@
 }
 
 .front-page .header {
-    margin-top: 25px;
+    margin-top: 5%;
 }
 
 .front-page .nav {
-    margin-top: 50px;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 800px) {
+    .front-page .nav {
+        margin-top: 6%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .front-page .nav {
+        margin-top: 13%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .front-page .nav {
+        margin-top: 18%;
+    }
 }
