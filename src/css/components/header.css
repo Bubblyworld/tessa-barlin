@@ -1,0 +1,73 @@
+.header {
+    display: inline-block;
+    font-family: 'Libre Baskerville', serif;
+    color: #2C403D;
+}
+
+.header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo-img {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+@media only screen and (max-width: 500px) {
+    .logo-img {
+        width: 150px;
+    }
+}
+
+.logo-text {
+    position: relative;
+    top: 130px;
+    left: -70px;
+
+    float: left;
+}
+
+.logo-text .drop-caps {
+    font-size: 110%;
+    margin-right: -4px;
+}
+
+.logo-text .t {
+    font-size: 30pt;
+}
+
+.logo-text .b {
+    font-size: 25pt;
+    margin-top: -12px;
+    margin-left: 6px;
+}
+
+.logo-text .p {
+    font-size: 11pt;
+    margin-top: -6px;
+    margin-left: 6px;
+}
+
+@media only screen and (max-width: 500px) {
+    .logo-text {
+        top: 100px;
+        left: -60px;
+    }
+    .logo-text .t {
+        font-size: 25pt;
+    }
+
+    .logo-text .b {
+        font-size: 20pt;
+        margin-top: -10px;
+    }
+
+    .logo-text .p {
+        font-size: 10pt;
+        margin-top: -5px;
+        margin-left: 8px;
+    }
+}

@@ -1,0 +1,11 @@
+.front-page {
+    text-align: center;
+}
+
+.front-page .header {
+    margin-top: 25px;
+}
+
+.front-page .nav {
+    margin-top: 50px;
+}
