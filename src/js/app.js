@@ -10,9 +10,10 @@ export default class App extends React.Component {
         return <div className='app'>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-            <div className='app-content'>
+            <SwipeableViews>
                 <FrontPage/>
-            </div>
+                <FrontPage/>
+            </SwipeableViews>
         </div>;
     }
 };
