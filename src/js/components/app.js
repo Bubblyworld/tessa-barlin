@@ -6,6 +6,8 @@ import '../../css/components/app.css';
 export default class App extends React.Component {
     render() {
         return <div className='app'>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
             <Background url='img/bg.jpg'/>
 
             <div className='app-content'>
