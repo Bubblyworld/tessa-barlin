@@ -138,6 +138,8 @@ Bg:   #2C403D
 .nav-item:hover {
     transform: scale(1.02);
     color: black;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 2px;
 }
 
 .nav-nature {
@@ -154,7 +156,7 @@ Bg:   #2C403D
     }
 
     .nav-item {
-        width: 100%;
+        width: 99%;
         margin-bottom: 10px;
     }
 
