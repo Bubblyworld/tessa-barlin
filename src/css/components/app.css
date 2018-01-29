@@ -90,7 +90,6 @@ Bg:   #2C403D
     }
 }
 
-
 .nav {
     margin-top: 60px;
     font-size: 13pt;
@@ -133,4 +132,23 @@ Bg:   #2C403D
 
 .nav-portrait {
     margin-right: 10%;
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-sep {
+        display: none;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-nature {
+        margin-left: 0;
+    }
+
+    .nav-portrait {
+        margin-left: 0;
+    }
 }
