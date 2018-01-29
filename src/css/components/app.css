@@ -2,7 +2,10 @@
 * {
     margin:0;
     padding:0;
-    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 
 /*
@@ -12,10 +15,95 @@ Bg:   #2C403D
 
 .app-content {
     font-family: 'Libre Baskerville', serif;
-    color: #C49365;
+    color: #2C403D;
+
+    position: relative;
+    text-align: center;
 }
 
-.page-block {
-    height: 100%;
-    width: 100%;
+.header {
+    display: inline-block;
+
+    margin-top: 5%;
+}
+
+.header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo-img {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+.logo-text {
+    position: relative;
+    top: 130px;
+    left: -70px;
+
+    float: left;
+}
+
+.logo-text .t {
+    font-size: 30pt;
+}
+
+.logo-text .b {
+    font-size: 25pt;
+
+    margin-top: -12px;
+    margin-left: 6px;
+}
+
+.logo-text .p {
+    font-size: 11pt;
+
+    margin-top: -6px;
+    margin-left: 6px;
+}
+
+.nav {
+    margin-top: 60px;
+    font-size: 13pt;
+}
+
+.nav::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.nav-sep {
+    position: relative;
+    float: left;
+
+    height: 22px;
+    width: 5%;
+}
+
+/* TODO getting a vertically centered separation div */
+.nav-sep .line {
+    position: absolute;
+    margin-top: 5.5px;
+    margin-bottom: 5.5px;
+
+    width:1px;
+    height: 10px;
+    background-color: #2C403D;
+}
+
+.nav-item {
+    float: left;
+    width: 23.33%;
+}
+
+.nav-nature {
+    margin-left: 10%;
+}
+
+.nav-portrait {
+    margin-right: 10%;
 }

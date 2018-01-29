@@ -1,19 +1,31 @@
 import React from 'react';
-import ParallaxBackground from './parallax_background.js';
-import TransitionWhenSeen from './wrappers/transition_when_seen.js';
-import AboutMe from './about_me.js';
+import Background from './background.js';
 
 import '../../css/components/app.css';
 
 export default class App extends React.Component {
     render() {
         return <div className='app'>
-            <ParallaxBackground href='img/test_bg_3.jpg'/>
+            <Background url='img/bg.jpg'/>
 
             <div className='app-content'>
-                <div className='page-block'></div>
+                <div className='header'>
+                    <img className='logo-img' src='img/black_logo.png'/>
 
-                <AboutMe/>
+                    <div className='logo-text'>
+                        <div className='t'>Tessa</div>
+                        <div className='b'>Barlin</div>
+                        <div className='p'>Photography</div>
+                    </div>
+                </div>
+
+                <div className='nav'>
+                    <div className='nav-item nav-nature'>NATURE</div>
+                    <div className='nav-sep'><div className='line'/></div>
+                    <div className='nav-item'>ABOUT</div>
+                    <div className='nav-sep'><div className='line'/></div>
+                    <div className='nav-item nav-portrait'>PORTRAITURE</div>
+                </div>
             </div>
         </div>;
     }
