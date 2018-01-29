@@ -122,8 +122,22 @@ Bg:   #2C403D
 }
 
 .nav-item {
+    display: block;
     float: left;
     width: 23.33%;
+
+    text-decoration: none;
+    color: inherit;
+
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+    transform: scale(1.02);
+    color: black;
 }
 
 .nav-nature {

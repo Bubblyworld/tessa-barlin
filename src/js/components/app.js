@@ -22,11 +22,19 @@ export default class App extends React.Component {
                 </div>
 
                 <div className='nav'>
-                    <div className='nav-item nav-nature'>NATURE</div>
-                    <div className='nav-sep'><div className='line'/></div>
-                    <div className='nav-item'>ABOUT</div>
-                    <div className='nav-sep'><div className='line'/></div>
-                    <div className='nav-item nav-portrait'>PORTRAITURE</div>
+                    <a href='#' className='nav-item nav-nature'>NATURE</a>
+
+                    <div className='nav-sep'>
+                        <span className='line'/>
+                    </div>
+
+                    <a href='#' className='nav-item'>ABOUT</a>
+
+                    <div className='nav-sep'>
+                        <span className='line'/>
+                    </div>
+
+                    <a href='#' className='nav-item nav-portrait'>PORTRAITURE</a>
                 </div>
             </div>
         </div>;
