@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileImage from './profile_image.js';
 
-import '../../css/components/about_me.css';
+import '../../css/components/about-me.css';
 
 export default class AboutMe extends React.Component {
     render() {

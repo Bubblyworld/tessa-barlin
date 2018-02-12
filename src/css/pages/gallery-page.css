@@ -1,0 +1,6 @@
+.gallery-page {
+    height: 100%;
+
+    overflow: scroll;
+    background-color: #C49365;
+}

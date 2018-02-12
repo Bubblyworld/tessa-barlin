@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../css/components/parallax_background.css';
+import '../../css/components/parallax-background.css';
 
 /**
  * Parallax background component using a fixed full-viewport div and

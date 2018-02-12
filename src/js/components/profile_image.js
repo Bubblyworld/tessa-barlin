@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../css/components/profile_image.css';
+import '../../css/components/profile-image.css';
 
 /**
  * Component for styling profile images. Takes the following props:
