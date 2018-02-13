@@ -1,6 +1,45 @@
 .gallery-page {
+    position: relative;
     height: 100%;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
 
     overflow: scroll;
     background-color: #C49365;
+}
+
+.gallery-line {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 40%;
+    height: 1px;
+    background: rgb(102, 94, 73);
+}
+
+.gallery-line:last-of-type {
+    margin-bottom: 5%;
+}
+
+.gallery-text {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 10pt;
+    color: #2C403D;
+
+    margin-top: 1%;
+    margin-bottom: 6%;
+}
+
+.gallery-page .logo {
+    display: inline-block;
+    height: 200px;
+
+    margin-top: 5%;
+}
+
+.gallery-page .image-grid {
+    margin-top: 2%;
+    margin-bottom: 2%;
 }

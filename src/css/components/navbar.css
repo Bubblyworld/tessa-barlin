@@ -19,7 +19,6 @@
     width: 5%;
 }
 
-/* TODO getting a (correctly? is this even possible in CSS?) vertically centered separation div */
 .nav-sep .line {
     display: inline-block;
     margin-top: 7px;
@@ -37,6 +36,10 @@
 
     text-decoration: none;
     color: inherit;
+
+    /* Fix weird bug where transforms move div 1p. */
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.0, 1.0);
 
     transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
     -o-transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
