@@ -26,6 +26,7 @@ export default class ImageGrid extends React.Component {
         };
 
         return <div style={wrapperStyle} className='img-wrapper' key={index}>
+            <div className='overlay'/>
             <img src={image.url}/>
         </div>;
     }

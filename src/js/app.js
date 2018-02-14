@@ -31,9 +31,9 @@ export default class App extends React.Component {
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
             <SwipeableViews>
-                <GalleryPage logo='img/elephant_logo_no.png' images={testImages} left={true}/>
+                <GalleryPage logo='img/elephant_logo_gold.png' images={testImages} left={true}/>
                 <FrontPage/>
-                <GalleryPage logo='img/flower_logo_no.png' right={true}/>
+                <GalleryPage logo='img/flower_logo_gold.png' right={true}/>
             </SwipeableViews>
         </div>;
     }

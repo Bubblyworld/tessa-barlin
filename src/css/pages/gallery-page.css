@@ -1,3 +1,10 @@
+
+/*
+brown: #C49365
+gray:   #2C403D
+ */
+
+
 .gallery-page {
     position: relative;
     height: 100%;
@@ -7,7 +14,7 @@
     text-align: center;
 
     overflow: scroll;
-    background-color: #C49365;
+    background-color: #2C403D;
 }
 
 .gallery-line {
@@ -26,10 +33,10 @@
 .gallery-text {
     font-family: 'Libre Baskerville', serif;
     font-size: 10pt;
-    color: #2C403D;
+    color: #C49365;
 
-    margin-top: 1%;
-    margin-bottom: 6%;
+    margin-top: 5%;
+    margin-bottom: 1%;
 }
 
 .gallery-page .logo {
