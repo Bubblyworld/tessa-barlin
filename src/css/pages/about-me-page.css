@@ -1,0 +1,119 @@
+
+/*
+brown: #C49365
+gray:   #2C403D
+ */
+
+.about-me-page {
+    text-align: center;
+    position: relative;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #2C403D;
+}
+
+.about-me-text {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18pt;
+    color: #C49365;
+
+    padding-top: 4%;
+    margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me-text {
+        font-size: 16pt;
+    }
+}
+
+.about-me-text .drop-caps {
+    font-size: 115%;
+}
+
+.about-me-line {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100px;
+    height: 1px;
+    background-color: #C49365;
+}
+
+.about-me-columns {
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media only screen and (max-width: 500px) {
+    .about-me-columns {
+        margin-top: 5%;
+    }
+}
+
+.about-me-columns::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.about-me-columns .col {
+    width: 50%;
+    float: right;
+
+    padding: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+    .about-me-columns .col {
+        width: 99.99%;
+    }
+}
+
+.about-me-image {
+    width: 80%;
+
+    margin-bottom: 10%;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+    .about-me-image {
+        margin-bottom: 5%;
+    }
+}
+
+.about-me-story {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13pt;
+    color: #C49365;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me-story {
+        font-size: 10pt;
+    }
+}
+
+.about-me-story p {
+    marigin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-me-social-media {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100px;
+    height: 10px;
+    content: 'a';
+    background-color: green;
+}
