@@ -1,44 +1,54 @@
 import React from 'react';
-import Background from './components/background.js';
-import SwipeableViews from 'react-swipeable-views';
-import FrontPage from './pages/front_page.js';
-import GalleryPage from './pages/gallery_page.js';
+import SwipeableRoutes from 'react-swipeable-routes';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
-//TODO TEST
+import FrontPage from './pages/front_page.js';
 import AboutMePage from './pages/about_me_page.js';
+import NatureGalleryPage from './pages/nature_gallery_page.js';
+import PortraitureGalleryPage from './pages/portraiture_gallery_page.js';
 
 import '../css/app.css';
 
 export default class App extends React.Component {
     render() {
-        let testImages = [
-            [
-                { url: 'img/portraiture/JA-1.jpg', width: 3000, height: 2000 },
-                { url: 'img/portraiture/JA-2.jpg', width: 3000, height: 2000 }
-            ],
-            [
-                { url: 'img/portraiture/JA-3.jpg', width: 2074, height: 3000 },
-                { url: 'img/portraiture/JA-4.jpg', width: 2000, height: 3000 },
-                { url: 'img/portraiture/JA-5.jpg', width: 2127, height: 3000 }
-            ],
-            [
-                { url: 'img/portraiture/JA-13.jpg', width: 3000, height: 2000 }
-            ],
-            [
-                { url: 'img/portraiture/JA-7.jpg', width: 2101, height: 3000 },
-                { url: 'img/portraiture/JA-8.jpg', width: 2033, height: 3000 }
-            ]
-        ];
-
-        return <div className='app'>
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-            <SwipeableViews>
-                {/*<GalleryPage logo='img/elephant_logo_gold.png' images={testImages} left={true}/>*/}
-                <FrontPage/>
-                {/*<AboutMePage/>*/}
-                {/*}<GalleryPage logo='img/flower_logo_gold.png' right={true}/>*/}
-            </SwipeableViews>
+        let frontPage = () => <div className='front-wrapper'>
+            <FrontPage/>
+            <AboutMePage/>
         </div>;
+
+        return <BrowserRouter>
+            <div className='app'>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+                <SwipeableRoutes>
+                    <Route path='/nature' component={NatureGalleryPage}/>
+                    <Route path='/' component={frontPage}/>
+                    <Route path='/portraiture' component={PortraitureGalleryPage}/>
+                </SwipeableRoutes>
+            </div>
+        </BrowserRouter>;
+    }
+
+    // Workaround to getting scrolling to the about-me page working on page load.
+    // Should work once we get the extract loader to separately bundle CSS.
+    componentDidMount() {
+        window.location.hash = window.decodeURIComponent(window.location.hash);
+
+        let scrollToAbout = () => {
+            let hashParts = window.location.hash.split('#');
+
+            if (hashParts.length > 1) {
+              let hash = hashParts.slice(-1)[0];
+
+              if (hash === 'about') {
+                  let about = document.getElementById('about');
+                  about.scrollIntoView();
+              }
+            }
+        };
+
+        // We've loaded, perform the scroll.
+        scrollToAbout();
+        window.onhashchange = scrollToAbout;
     }
 };

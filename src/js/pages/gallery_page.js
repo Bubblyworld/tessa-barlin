@@ -9,7 +9,7 @@ export default class GalleryPage extends React.Component {
             <img src={this.props.logo} className='logo'/>
 
             <div className='gallery-text'>
-                NATURE PHOTOGRAPHY
+                {this.props.text}
             </div>
 
             <div className='gallery-line'/>

@@ -4,7 +4,8 @@ import '../../css/pages/about-me-page.css';
 
 export default class AboutMePage extends React.Component {
     render() {
-        return <div className='about-me-page'>
+        // We include the style prop as this is critical CSS.
+        return <div className='about-me-page' id='about' style={{height: '100vh'}}>
             <img className='about-me-image' src='img/aboutme.jpg'/>
 
             <h1>My name's Tessa Barlin.</h1>
@@ -13,7 +14,7 @@ export default class AboutMePage extends React.Component {
                 I'm a photographer and documentary author currently working in Cape Town,
                 South Africa. I have a passion for nature and people, especially when it
                 comes to the way they interact and socialise. I started taking photographs
-                when I was a highschooler in Timbuktu - at the time, it was just a hobyy,
+                when I was a highschooler in Timbuktu - at the time, it was just a hobby,
                 but it has since grown into a full-time occupation for me.
             </p>
 
