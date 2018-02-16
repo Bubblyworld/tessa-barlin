@@ -1,6 +1,6 @@
 import React from 'react';
 import SwipeableRoutes from 'react-swipeable-routes';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 import FrontPage from './pages/front_page.js';
 import AboutMePage from './pages/about_me_page.js';
@@ -22,7 +22,7 @@ export default class App extends React.Component {
 
                 <SwipeableRoutes>
                     <Route path='/nature' component={NatureGalleryPage}/>
-                    <Route path='/' component={frontPage}/>
+                    <Route exact path='/' component={frontPage}/>
                     <Route path='/portraiture' component={PortraitureGalleryPage}/>
                 </SwipeableRoutes>
             </div>
@@ -32,10 +32,12 @@ export default class App extends React.Component {
     // Workaround to getting scrolling to the about-me page working on page load.
     // Should work once we get the extract loader to separately bundle CSS.
     componentDidMount() {
-        window.location.hash = window.decodeURIComponent(window.location.hash);
-
         let scrollToAbout = () => {
+            window.location.hash = window.decodeURIComponent(window.location.hash);
             let hashParts = window.location.hash.split('#');
+
+            console.log("FIRING");
+            console.log(hashParts);
 
             if (hashParts.length > 1) {
               let hash = hashParts.slice(-1)[0];

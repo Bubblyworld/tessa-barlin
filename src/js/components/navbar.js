@@ -1,29 +1,30 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import '../../css/components/navbar.css';
 
 export default class NavBar extends React.Component {
     render() {
         return <div className='nav'>
-            <a href='#' className='nav-item nav-nature'>
+            <Link to='/nature' className='nav-item nav-nature'>
                 <span className='drop-caps'>N</span>ATURE
-            </a>
+            </Link>
 
             <div className='nav-sep'>
                 <span className='line'/>
             </div>
 
-            <a href='#' className='nav-item'>
+            <Link to='#about' className='nav-item'>
                 <span className='drop-caps'>A</span>BOUT
-            </a>
+            </Link>
 
             <div className='nav-sep'>
                 <span className='line'/>
             </div>
 
-            <a href='#' className='nav-item nav-portrait'>
+            <Link to='/portraiture' className='nav-item nav-portrait'>
                 <span className='drop-caps'>P</span>ORTRAITURE
-            </a>
+            </Link>
         </div>;
     }
 }
