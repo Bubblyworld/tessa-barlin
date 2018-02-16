@@ -6,114 +6,85 @@ gray:   #2C403D
 
 .about-me-page {
     text-align: center;
-    position: relative;
-    top: 0;
+    position: absolute;
+    top: 100%;
 
+    min-height: 100%;
     width: 100%;
-    height: 100%;
 
     background-color: #2C403D;
 }
 
-.about-me-text {
-    font-family: 'Libre Baskerville', serif;
+.about-me-page h1 {
+    font-family: 'Signika Negative', sans-serif;
     font-size: 18pt;
     color: #C49365;
-
-    padding-top: 4%;
-    margin-bottom: 1%;
 }
 
-@media only screen and (max-width: 800px) {
-    .about-me-text {
-        font-size: 16pt;
-    }
+.about-me-page h2 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 14pt;
+    color: #C49365;
+
+    margin-top: 5%;
 }
 
-.about-me-text .drop-caps {
-    font-size: 115%;
-}
+.about-me-page p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 11pt;
+    color: #C49365;
 
-.about-me-line {
+    line-height: 1.5;
+
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-
-    width: 100px;
-    height: 1px;
-    background-color: #C49365;
 }
 
-.about-me-columns {
-    margin-top: 7%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-@media only screen and (max-width: 500px) {
-    .about-me-columns {
-        margin-top: 5%;
-    }
-}
-
-.about-me-columns::after {
-    display: table;
-    content: '';
-    clear: both;
-}
-
-.about-me-columns .col {
-    width: 50%;
-    float: right;
-
-    padding: 5px;
-}
-
-@media only screen and (max-width: 500px) {
-    .about-me-columns .col {
-        width: 99.99%;
-    }
-}
 
 .about-me-image {
-    width: 80%;
+    width: 250px;
+    margin-top: 4%;
+    margin-bottom: 4%;
 
-    margin-bottom: 10%;
-    border-radius: 5px;
-}
-
-@media only screen and (max-width: 500px) {
-    .about-me-image {
-        margin-bottom: 5%;
-    }
-}
-
-.about-me-story {
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-
-    font-family: 'Libre Baskerville', serif;
-    font-size: 13pt;
-    color: #C49365;
+    border-radius: 300px;
 }
 
 @media only screen and (max-width: 800px) {
-    .about-me-story {
-        font-size: 10pt;
+    .about-me-image {
+        width: 200px;
     }
-}
-
-.about-me-story p {
-    marigin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .about-me-social-media {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 3%;
+    margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;
 
-    width: 100px;
-    height: 10px;
-    content: 'a';
-    background-color: green;
+    width: 60%;
+    min-width: 300px;
+}
+
+.about-me-social-media a {
+    font-size: 20pt;
+    text-decoration: none;
+}
+
+.about-me-social-media .facebook {
+    color: #3b5998;
+}
+
+.about-me-social-media .twitter {
+    color: #00aced;
+}
+
+.about-me-social-media .instagram {
+    color: #517fa4;
 }

@@ -35,8 +35,8 @@ export default class App extends React.Component {
 
             <SwipeableViews>
                 {/*<GalleryPage logo='img/elephant_logo_gold.png' images={testImages} left={true}/>*/}
-                {/*<FrontPage/>*/}
-                <AboutMePage/>
+                <FrontPage/>
+                {/*<AboutMePage/>*/}
                 {/*}<GalleryPage logo='img/flower_logo_gold.png' right={true}/>*/}
             </SwipeableViews>
         </div>;

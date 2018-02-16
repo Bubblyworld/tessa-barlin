@@ -5,34 +5,37 @@ import '../../css/pages/about-me-page.css';
 export default class AboutMePage extends React.Component {
     render() {
         return <div className='about-me-page'>
-            <div className='about-me-text'>
-                <span className='drop-caps'>A</span>BOUT <span className='drop-caps'>M</span>E
-            </div>
+            <img className='about-me-image' src='img/aboutme.jpg'/>
 
-            <div className='about-me-line'/>
+            <h1>My name's Tessa Barlin.</h1>
 
-            <div className='about-me-columns'>
-                {/*The order is because of responsive switch to single cols for small screens.*/}
-                <div id='right' className='col'>
-                    <img src='img/aboutme.jpg' className='about-me-image'/>
-                </div>
+            <p>
+                I'm a photographer and documentary author currently working in Cape Town,
+                South Africa. I have a passion for nature and people, especially when it
+                comes to the way they interact and socialise. I started taking photographs
+                when I was a highschooler in Timbuktu - at the time, it was just a hobyy,
+                but it has since grown into a full-time occupation for me.
+            </p>
 
-                <div id='left' className='col'>
-                    <div className='about-me-story'>
-                        <p>
-                            I'm Tessa Barlin, a photographer interested in both nature
-                            and people. I've been taking photographs for etc etc and
-                            such and more and other things.
-                        </p>
+            <h2>
+                Check out my Nature and Portraiture galleries!
+            </h2>
 
-                        <p>
-                            To book me for a shoot, contact me on PHONE or drop me
-                            an email in the form below!
-                        </p>
-                    </div>
+            <div className='about-me-social-media'>
+                <a className='fa-stack fa-2x' href='https://web.facebook.com/tessabarlin.photography/'>
+                    <span className='fas fa-circle fa-stack-2x facebook'/>
+                    <span className='fab fa-facebook fa-stack-1x fa-inverse'/>
+                </a>
 
-                    <div className='about-me-social-media'/>
-                </div>
+                <a className='fa-stack fa-2x'>
+                    <span className='fas fa-circle fa-stack-2x twitter'/>
+                    <span className='fab fa-twitter fa-stack-1x fa-inverse'/>
+                </a>
+
+                <a className='fa-stack fa-2x' href='https://www.instagram.com/tessabarlin_photography/'>
+                    <span className='fas fa-circle fa-stack-2x instagram'/>
+                    <span className='fab fa-instagram fa-stack-1x fa-inverse'/>
+                </a>
             </div>
         </div>;
     }
