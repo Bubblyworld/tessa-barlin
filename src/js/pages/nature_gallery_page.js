@@ -7,20 +7,24 @@ export default class NatureGalleryPage extends React.Component {
         let logo = 'img/elephant_logo_gold.png';
         let images = [
             [
-                { url: 'img/portraiture/JA-1.jpg', width: 3000, height: 2000 },
-                { url: 'img/portraiture/JA-2.jpg', width: 3000, height: 2000 }
+                { url: 'img/nature/1-1.jpg', width: 2000, height: 3000 },
+                { url: 'img/nature/1-2.jpg', width: 2606, height: 3648 }
             ],
             [
-                { url: 'img/portraiture/JA-3.jpg', width: 2074, height: 3000 },
-                { url: 'img/portraiture/JA-4.jpg', width: 2000, height: 3000 },
-                { url: 'img/portraiture/JA-5.jpg', width: 2127, height: 3000 }
+                { url: 'img/nature/2-1.jpg', width: 3000, height: 1445 }
             ],
             [
-                { url: 'img/portraiture/JA-13.jpg', width: 3000, height: 2000 }
+                { url: 'img/nature/3-1.jpg', width: 3000, height: 2000 },
+                { url: 'img/nature/3-2.jpg', width: 3000, height: 2000 }
             ],
             [
-                { url: 'img/portraiture/JA-7.jpg', width: 2101, height: 3000 },
-                { url: 'img/portraiture/JA-8.jpg', width: 2033, height: 3000 }
+                { url: 'img/nature/4-1.jpg', width: 3000, height: 2000 },
+                { url: 'img/nature/4-2.jpg', width: 3000, height: 2000 }
+            ],
+            [
+                { url: 'img/nature/5-1.jpg', width: 1667, height: 2500 },
+                { url: 'img/nature/5-2.jpg', width: 2253, height: 3000 },
+                { url: 'img/nature/5-3.jpg', width: 2091, height: 2927 }
             ]
         ];
 

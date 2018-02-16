@@ -4,8 +4,7 @@ import '../../css/pages/about-me-page.css';
 
 export default class AboutMePage extends React.Component {
     render() {
-        // We include the style prop as this is critical CSS.
-        return <div className='about-me-page' id='about' style={{height: '100vh'}}>
+        return <div className='about-me-page' id='about'>
             <img className='about-me-image' src='img/aboutme.jpg'/>
 
             <h1>My name's Tessa Barlin.</h1>
