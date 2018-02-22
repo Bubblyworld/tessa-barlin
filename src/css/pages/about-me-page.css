@@ -11,6 +11,7 @@ gray:   #2C403D
     min-height: 100vh;
     width: 100%;
 
+    z-index: -2;
     background-color: #2C403D;
 }
 
@@ -43,18 +44,67 @@ gray:   #2C403D
     margin-right: auto;
 }
 
-
 .about-me-image {
-    width: 250px;
+    width: 200px;
     margin-top: 4%;
     margin-bottom: 4%;
 
     border-radius: 300px;
 }
 
+.about-me-underlay {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 20%;
+
+    width: 100%;
+    height: 55%;
+
+    box-shadow: 5px 5px 10px -4px #1d2d2b;
+    background-color: #253634;
+    border-radius: 3px;
+}
+
 @media only screen and (max-width: 800px) {
+    .about-me-page h1 {
+        font-size: 16pt
+    }
+
+    .about-me-page p {
+        font-size: 10pt;
+    }
+
+    .about-me-page h2 {
+        font-size: 12pt;
+    }
+
     .about-me-image {
-        width: 200px;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-me-page h1 {
+        font-size: 14pt
+    }
+
+    .about-me-page p {
+        font-size: 8pt;
+    }
+
+    .about-me-page h2 {
+        font-size: 10pt;
+    }
+
+    .about-me-image {
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about-me-underlay {
+        height: 45%;
     }
 }
 
@@ -62,18 +112,43 @@ gray:   #2C403D
     display: flex;
     justify-content: space-around;
 
-    margin-top: 3%;
+    margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2%;
+    padding: 2%;
 
     width: 60%;
-    min-width: 300px;
+
+    box-shadow: 5px 5px 10px -4px #1d2d2b;
+    background-color: #253634;
+    border-radius: 3px;
 }
 
 .about-me-social-media a {
     font-size: 20pt;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me-social-media {
+        margin-top: 7%;
+    }
+
+    .about-me-social-media a {
+        font-size: 16pt;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-me-social-media {
+        margin-top: 23%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about-me-social-media {
+        margin-top: 10%;
+    }
 }
 
 .about-me-social-media .facebook {

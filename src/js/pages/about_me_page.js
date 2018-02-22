@@ -7,6 +7,8 @@ export default class AboutMePage extends React.Component {
         return <div className='about-me-page' id='about'>
             <img className='about-me-image' src='img/aboutme.jpg'/>
 
+            <div className="about-me-underlay"/>
+
             <h1>My name's Tessa Barlin.</h1>
 
             <p>
