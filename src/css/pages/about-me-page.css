@@ -15,6 +15,15 @@ gray:   #2C403D
     background-color: #2C403D;
 }
 
+.about-me-centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
 .about-me-page h1 {
     font-family: 'Signika Negative', sans-serif;
     font-size: 17pt;
@@ -25,7 +34,7 @@ gray:   #2C403D
     font-family: 'Signika Negative', sans-serif;
     font-size: 13pt;
 
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 
     color: #C49365;
 }
@@ -46,7 +55,7 @@ gray:   #2C403D
 
 .about-me-image {
     width: 150px;
-    padding-top: 50px;
+    padding-top: 20px;
 
     border-radius: 300px;
 }
@@ -65,24 +74,6 @@ gray:   #2C403D
     border-radius: 3px;
 }
 
-/*@media only screen and (max-width: 900px) {
-    .about-me-page h1 {
-        font-size: 16pt
-    }
-
-    .about-me-page p {
-        font-size: 10pt;
-    }
-
-    .about-me-page h2 {
-        font-size: 12pt;
-    }
-
-    .about-me-image {
-        width: 150px;
-    }
-}
-*/
 @media only screen and (max-width: 500px) {
     .about-me-page h1 {
         font-size: 14pt
@@ -95,35 +86,22 @@ gray:   #2C403D
     .about-me-page h2 {
         font-size: 10pt;
     }
-
-    /*.about-me-image {
-        width: 150px;
-    }*/
 }
-/*
-@media only screen and (min-width: 1200px) {
-    .about-me-underlay {
-        height: 45%;
-    }
-}*/
 
 .about-me-social-media {
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 0;
     right: 0;
 
     display: flex;
     justify-content: space-around;
 
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
+    padding: 10px 50px;
 
-    width: 60%;
-    max-width: 400px;
+    width: 100%;
 
-    box-shadow: 5px 5px 10px -4px #1d2d2b;
+    box-shadow: -5px -5px 10px -4px #1d2d2b;
     background-color: #253634;
     border-radius: 3px;
 }
@@ -133,27 +111,15 @@ gray:   #2C403D
     text-decoration: none;
 }
 
-/*@media only screen and (max-width: 900px) {
-    .about-me-social-media {
-        margin-top: 7%;
-    }
+.about-me-social-media .copyright {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
 
-    .about-me-social-media a {
-        font-size: 16pt;
-    }
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 7pt;
+    color: #63726f;
 }
-
-@media only screen and (max-width: 500px) {
-    .about-me-social-media {
-        margin-top: 23%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .about-me-social-media {
-        margin-top: 10%;
-    }
-}*/
 
 .about-me-social-media .facebook {
     color: #3b5998;
