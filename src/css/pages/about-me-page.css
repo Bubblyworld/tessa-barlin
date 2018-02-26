@@ -8,7 +8,7 @@ gray:   #2C403D
     text-align: center;
     position: relative;
 
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
 
     z-index: -2;
@@ -17,56 +17,55 @@ gray:   #2C403D
 
 .about-me-page h1 {
     font-family: 'Signika Negative', sans-serif;
-    font-size: 18pt;
+    font-size: 17pt;
     color: #C49365;
 }
 
 .about-me-page h2 {
     font-family: 'Signika Negative', sans-serif;
-    font-size: 14pt;
-    color: #C49365;
+    font-size: 13pt;
 
-    margin-top: 5%;
+    padding-bottom: 20px;
+
+    color: #C49365;
 }
 
 .about-me-page p {
     font-family: 'Libre Baskerville', serif;
-    font-size: 11pt;
+    font-size: 10pt;
     color: #C49365;
 
     line-height: 1.5;
-
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin: 20px 0;
 
     width: 80%;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .about-me-image {
-    width: 200px;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    width: 150px;
+    padding-top: 50px;
 
     border-radius: 300px;
 }
 
 .about-me-underlay {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 20%;
-
     width: 100%;
-    height: 55%;
+    padding-top: 100px;
+
+    position: relative;
+    top: -85px;
+
+    z-index: -1;
 
     box-shadow: 5px 5px 10px -4px #1d2d2b;
     background-color: #253634;
     border-radius: 3px;
 }
 
-@media only screen and (max-width: 800px) {
+/*@media only screen and (max-width: 900px) {
     .about-me-page h1 {
         font-size: 16pt
     }
@@ -83,7 +82,7 @@ gray:   #2C403D
         width: 150px;
     }
 }
-
+*/
 @media only screen and (max-width: 500px) {
     .about-me-page h1 {
         font-size: 14pt
@@ -97,27 +96,32 @@ gray:   #2C403D
         font-size: 10pt;
     }
 
-    .about-me-image {
+    /*.about-me-image {
         width: 150px;
-    }
+    }*/
 }
-
+/*
 @media only screen and (min-width: 1200px) {
     .about-me-underlay {
         height: 45%;
     }
-}
+}*/
 
 .about-me-social-media {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
     display: flex;
     justify-content: space-around;
 
-    margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
-    padding: 2%;
+    padding: 10px;
 
     width: 60%;
+    max-width: 400px;
 
     box-shadow: 5px 5px 10px -4px #1d2d2b;
     background-color: #253634;
@@ -125,11 +129,11 @@ gray:   #2C403D
 }
 
 .about-me-social-media a {
-    font-size: 20pt;
+    font-size: 15pt;
     text-decoration: none;
 }
 
-@media only screen and (max-width: 800px) {
+/*@media only screen and (max-width: 900px) {
     .about-me-social-media {
         margin-top: 7%;
     }
@@ -149,7 +153,7 @@ gray:   #2C403D
     .about-me-social-media {
         margin-top: 10%;
     }
-}
+}*/
 
 .about-me-social-media .facebook {
     color: #3b5998;

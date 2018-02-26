@@ -6,22 +6,22 @@ export default class AboutMePage extends React.Component {
     render() {
         return <div className='about-me-page' id='about'>
             <img className='about-me-image' src='img/aboutme.jpg'/>
+            
+            <div className="about-me-underlay">
+                <h1>My name's Tessa Barlin.</h1>
 
-            <div className="about-me-underlay"/>
+                <p>
+                    I'm a photographer and documentary author currently working in Cape Town,
+                    South Africa. I have a passion for nature and people, especially when it
+                    comes to the way they interact and socialise. I started taking photographs
+                    when I was a highschooler in Timbuktu - at the time, it was just a hobby,
+                    but it has since grown into a full-time occupation for me.
+                </p>
 
-            <h1>My name's Tessa Barlin.</h1>
-
-            <p>
-                I'm a photographer and documentary author currently working in Cape Town,
-                South Africa. I have a passion for nature and people, especially when it
-                comes to the way they interact and socialise. I started taking photographs
-                when I was a highschooler in Timbuktu - at the time, it was just a hobby,
-                but it has since grown into a full-time occupation for me.
-            </p>
-
-            <h2>
-                Check out my Nature and Portraiture galleries!
-            </h2>
+                <h2>
+                    Check out my Nature and Portraiture galleries!
+                </h2>
+            </div>
 
             <div className='about-me-social-media'>
                 <a className='fa-stack fa-2x' href='https://web.facebook.com/tessabarlin.photography/'>
