@@ -3,8 +3,9 @@ import GalleryPage from './gallery_page.js';
 
 export default class NatureGalleryPage extends React.Component {
     render() {
-        let text = 'NATURE GALLERY';
-        let logo = 'img/elephant_logo_gold.png';
+        let text   = <div>NATURE<br/>GALLERY</div>;
+        let logo   = 'img/elephant_logo_gold.png';
+        let story  = 'I love elephants, and other nature things like forests.';
         let images = [
             [
                 { url: 'img/nature/1-1_sma.jpg', width: 2000, height: 3000 },
@@ -28,6 +29,6 @@ export default class NatureGalleryPage extends React.Component {
             ]
         ];
 
-        return <GalleryPage logo={logo} text={text} images={images}/>
+        return <GalleryPage logo={logo} text={text} story={story} images={images} left/>
     }
 };

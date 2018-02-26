@@ -11,6 +11,10 @@ const config = {
         publicPath: '/'
     },
 
+    devServer: {
+        historyApiFallback: true
+    },
+
     module: {
         rules: [
             {

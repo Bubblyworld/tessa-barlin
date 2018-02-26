@@ -3,8 +3,9 @@ import GalleryPage from './gallery_page.js';
 
 export default class PortraitureGalleryPage extends React.Component {
     render() {
-        let text = 'PORTRAITURE GALLERY';
+        let text = <div>PORTRAITURE<br/>GALLERY</div>
         let logo = 'img/flower_logo_gold.png';
+        let story  = 'People have always played a special role in my life. I love the way we can read so much into another\'s mood by the way...';
         let images = [
             [
                 { url: 'img/portraiture/1-1_sma.jpg', width: 2500, height: 1667 }
@@ -34,6 +35,6 @@ export default class PortraitureGalleryPage extends React.Component {
             ]
         ];
 
-        return <GalleryPage logo={logo} text={text} images={images}/>
+        return <GalleryPage logo={logo} text={text} story={story} images={images} right/>
     }
 };

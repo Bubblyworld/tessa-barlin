@@ -36,9 +36,6 @@ export default class App extends React.Component {
             window.location.hash = window.decodeURIComponent(window.location.hash);
             let hashParts = window.location.hash.split('#');
 
-            console.log("FIRING");
-            console.log(hashParts);
-
             if (hashParts.length > 1) {
               let hash = hashParts.slice(-1)[0];
 

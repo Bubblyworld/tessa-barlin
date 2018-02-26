@@ -17,7 +17,50 @@ gray:   #2C403D
     background-color: #2C403D;
 }
 
+.gallery-logo {
+    position: relative;
+}
+
+.back-button {
+    display: block;
+
+    text-decoration: none;
+    color: inherit;
+
+    width: 100px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Fix weird bug where transforms move div 1p. */
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.0, 1.0);
+
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13pt;
+    color: #C49365;
+
+}
+
+.back-button:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.075);
+    color: #de9d5f;
+    border-radius: 2px;
+}
+
+.back-button .drop-caps {
+    font-size: 115%;
+    margin-right: 1px;
+}
+
 .gallery-line {
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
 
@@ -31,22 +74,30 @@ gray:   #2C403D
 }
 
 .gallery-text {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 10pt;
-    color: #C49365;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 160px;
 
-    margin-top: 5%;
-    margin-bottom: 1%;
+    width: 200px;
+    margin: 0 auto;
+
+    font-family: 'Libre Baskerville', serif;
+    font-size: 8pt;
+    color: #C49365;
 }
 
 .gallery-page .logo {
     display: inline-block;
     height: 200px;
 
-    margin-top: 5%;
+    margin-top: 40px;
 }
 
 .gallery-page .image-grid {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 800px;
 }
