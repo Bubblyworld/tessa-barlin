@@ -7,8 +7,8 @@ import '../../css/pages/gallery-page.css';
 export default class GalleryPage extends React.Component {
     render() {
         var styles = {}
-        if (this.props.left) styles.left = '210px';
-        if (this.props.right) styles.right = '210px';
+        if (this.props.left) styles.left = '230px';
+        if (this.props.right) styles.right = '230px';
         console.log(styles);
 
         return <div className='gallery-page'>

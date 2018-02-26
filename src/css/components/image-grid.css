@@ -21,10 +21,10 @@
 
 .img-wrapper .overlay {
     position: absolute;
-    top: 5px;
-    bottom: 5px;
-    left: 5px;
-    right: 5px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 
     background-color: #2C403D;
     opacity: 0.5;
@@ -47,4 +47,5 @@
     width: 100%;
 
     border-radius: 2px;
+    box-shadow: 5px 5px 10px #1d2d2b;
 }
