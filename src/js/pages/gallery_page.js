@@ -9,7 +9,6 @@ export default class GalleryPage extends React.Component {
         var styles = {}
         if (this.props.left) styles.left = '230px';
         if (this.props.right) styles.right = '230px';
-        console.log(styles);
 
         return <div className='gallery-page'>
             <div className="gallery-logo">

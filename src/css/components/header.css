@@ -10,24 +10,6 @@
     clear: both;
 }
 
-/*@media only screen and (min-width: 1000px) {
-    .header {
-        transform: scale(1.5);
-    }
-}*/
-
-/*.logo-img {
-    width: 200px;
-    height: auto;
-    float: left;
-}
-
-@media only screen and (max-width: 500px) {
-    .logo-img {
-        width: 150px;
-    }
-}*/
-
 .logo-text {
     position: relative;
     float: left;
@@ -53,24 +35,3 @@
     margin-top: -6px;
     margin-left: 6px;
 }
-
-/*@media only screen and (max-width: 500px) {
-    .logo-text {
-        top: 100px;
-        left: -60px;
-    }
-    .logo-text .t {
-        font-size: 25pt;
-    }
-
-    .logo-text .b {
-        font-size: 20pt;
-        margin-top: -10px;
-    }
-
-    .logo-text .p {
-        font-size: 10pt;
-        margin-top: -5px;
-        margin-left: 8px;
-    }
-}*/

@@ -17,6 +17,10 @@ gray:   #2C403D
     background-color: #2C403D;
 }
 
+.gallery-page::-webkit-scrollbar {
+    display: none;
+}
+
 .gallery-logo {
     position: relative;
 }
