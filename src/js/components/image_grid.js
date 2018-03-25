@@ -1,6 +1,8 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
 
 import '../../css/components/image-grid.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default class ImageGrid extends React.Component {
     constructor() {
@@ -26,8 +28,12 @@ export default class ImageGrid extends React.Component {
         };
 
         return <div style={wrapperStyle} className='img-wrapper' key={index}>
-            <div className='overlay'/>
-            <img src={image.url}/>
+            <Carousel showStatus={false} showIndicators={false} showThumbs={false}>
+                <div>
+                    <div className='overlay'/>
+                    <img src={image.url}/>
+                </div>
+            </Carousel>
         </div>;
     }
 
