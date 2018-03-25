@@ -8,7 +8,7 @@ export default class NatureGalleryPage extends React.Component {
         let story  = 'I love elephants, and other nature things like forests.';
         let images = [
             [
-                { url: 'img/nature/1-1_sma.jpg', width: 2000, height: 3000 },
+                { urls: ['img/nature/1-1_sma.jpg', 'img/nature/1-1_sma.jpg'], width: 2000, height: 3000 },
                 { url: 'img/nature/1-2_sma.jpg', width: 2606, height: 3648 }
             ],
             [

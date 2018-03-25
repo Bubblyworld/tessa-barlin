@@ -12,16 +12,23 @@ export default class ImageGrid extends React.Component {
         this.renderRow = this.renderRow.bind(this);
     }
 
+    renderImage(url) {
+        return <div>
+            <div className='overlay'/>
+            <img src={url}/>
+        </div>
+    }
+
     /**
-     * Renders an image in a grid row given an object describing:
+     * Renders an image in a grid row given an object:
      * {
-     *      url: source URL of the image
-     *      width: width of the source image
-     *      height: height of the source image
+     *      url[s]: a string or array of source URLS for the images
+     *      width: width of the source images
+     *      height: height of the source images
      * }
      */
-    renderWrapper(image, index) {
-        let aspectRatio = image.width / image.height;
+    renderWrapper(images, index) {
+        let aspectRatio = images.width / images.height;
         let wrapperStyle = {
             flexGrow: aspectRatio,
             flexShrink: aspectRatio
@@ -29,10 +36,7 @@ export default class ImageGrid extends React.Component {
 
         return <div style={wrapperStyle} className='img-wrapper' key={index}>
             <Carousel showStatus={false} showIndicators={false} showThumbs={false}>
-                <div>
-                    <div className='overlay'/>
-                    <img src={image.url}/>
-                </div>
+                { images.urls ? images.urls.map(this.renderImage) : this.renderImage(images.url) }
             </Carousel>
         </div>;
     }
