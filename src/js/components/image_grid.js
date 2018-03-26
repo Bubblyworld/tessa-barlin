@@ -32,7 +32,7 @@ export default class ImageGrid extends React.Component {
         };
 
         return <div style={wrapperStyle} className='img-wrapper' key={index}>
-            <Carousel showStatus={false} showIndicators={false} showThumbs={false}>
+            <Carousel showStatus={false} showIndicators={false} showThumbs={false} swipeable={false}>
                 { images.urls ? images.urls.map(this.renderImage) : this.renderImage(images.url) }
             </Carousel>
         </div>;
