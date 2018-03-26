@@ -18,6 +18,10 @@
     display: none;
 }
 
+body {
+    overflow:hidden;
+}
+
 /*
 brown: #C49365
 gray:   #2C403D

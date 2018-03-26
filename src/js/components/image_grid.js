@@ -13,10 +13,7 @@ export default class ImageGrid extends React.Component {
     }
 
     renderImage(url) {
-        return <div>
-            <div className='overlay'/>
-            <img src={url}/>
-        </div>
+        return <img src={url}/>;
     }
 
     /**

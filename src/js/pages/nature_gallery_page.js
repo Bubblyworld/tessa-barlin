@@ -8,24 +8,22 @@ export default class NatureGalleryPage extends React.Component {
         let story  = 'I love elephants, and other nature things like forests.';
         let images = [
             [
-                { urls: ['img/nature/1-1_sma.jpg', 'img/nature/1-1_sma.jpg'], width: 2000, height: 3000 },
-                { url: 'img/nature/1-2_sma.jpg', width: 2606, height: 3648 }
+                { urls: ['img/nature/1-1-1.jpg', 'img/nature/1-1-2.jpg', 'img/nature/1-1-3.jpg'], width: 2500, height: 1667 }
             ],
             [
-                { url: 'img/nature/2-1_sma.jpg', width: 3000, height: 1445 }
+                { urls: ['img/nature/2-1-1.jpg', 'img/nature/2-1-2.jpg'], width: 1667, height: 2500 },
+                { urls: ['img/nature/2-2-1.jpg', 'img/nature/2-2-2.jpg'], width: 1667, height: 2500 }
             ],
             [
-                { url: 'img/nature/3-1_sma.jpg', width: 3000, height: 2000 },
-                { url: 'img/nature/3-2_sma.jpg', width: 3000, height: 2000 }
+                { urls: ['img/nature/3-1-1.jpg'], width: 1897, height: 2500 },
+                { urls: ['img/nature/3-2-1.jpg'], width: 1878, height: 2500 },
+                { urls: ['img/nature/3-3-1.jpg'], width: 1786, height: 2500 }
             ],
             [
-                { url: 'img/nature/4-1_sma.jpg', width: 3000, height: 2000 },
-                { url: 'img/nature/4-2_sma.jpg', width: 3000, height: 2000 }
+                { urls: ['img/nature/4-1-1.jpg'], width: 2500, height: 1744 }
             ],
             [
-                { url: 'img/nature/5-1_sma.jpg', width: 1667, height: 2500 },
-                { url: 'img/nature/5-2_sma.jpg', width: 2253, height: 3000 },
-                { url: 'img/nature/5-3_sma.jpg', width: 2091, height: 2927 }
+                { urls: ['img/nature/5-1-1.jpg', 'img/nature/5-1-2.jpg', 'img/nature/5-1-3.jpg'], width: 2500, height: 1667 }
             ]
         ];
 
