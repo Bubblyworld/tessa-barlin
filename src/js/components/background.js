@@ -10,6 +10,15 @@ import '../../css/components/background.css';
  */
 export default class Background extends React.Component {
     render() {
-        return <img className='background' src={this.props.url}/>;
+        var imgStyle = {
+            backgroundImage: 'url("' + this.props.url + '")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+        };
+
+        return <div className='background-wrap'>
+            <div className='background' style={imgStyle}/>
+        </div>;
     }
 };

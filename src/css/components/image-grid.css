@@ -19,30 +19,6 @@
     }
 }
 
-.img-wrapper .overlay {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-
-    background-color: #2C403D;
-    opacity: 0.5;
-
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent;
-
-    transition: opacity 0.4s ease-in-out;
-    -o-transition: opacity 0.4s ease-in-out;
-    -webkit-transition: opacity 0.4s ease-in-out;
-    -moz-transition: opacity 0.4s ease-in-out;
-}
-
-.img-wrapper .overlay:hover {
-    opacity: 0;
-}
-
 .image-grid-row img {
     width: 100%;
 
