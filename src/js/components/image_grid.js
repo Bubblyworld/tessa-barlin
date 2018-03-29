@@ -1,4 +1,6 @@
 import React from 'react';
+import Img from 'react-image';
+import { ClipLoader } from 'react-spinners';
 import { Carousel } from 'react-responsive-carousel';
 
 import '../../css/components/image-grid.css';
@@ -12,8 +14,29 @@ export default class ImageGrid extends React.Component {
         this.renderRow = this.renderRow.bind(this);
     }
 
-    renderImage(url) {
-        return <img src={url}/>;
+    loader() {
+        return <div className='image-grid-spinner'>
+            <div className='center-spinner'>
+                <ClipLoader loading={true} color={'#C49365'}/>
+            </div>
+        </div>;
+    }
+
+    unloader() {
+        var style = {
+            fontSize: '60px',
+            color: '#C49365'
+        };
+
+        return <div className='image-grid-spinner'>
+            <div className='center-spinner'>
+                <span style={style} className='fas fa-exclamation'/>
+            </div>
+        </div>
+    }
+
+    renderImage(url, index) {
+        return <Img key={'img-' + index} src={url} unloader={this.unloader()} loader={this.loader()}/>;
     }
 
     /**
@@ -31,9 +54,11 @@ export default class ImageGrid extends React.Component {
             flexShrink: aspectRatio
         };
 
-        return <div style={wrapperStyle} className='img-wrapper' key={index}>
+
+
+        return <div style={wrapperStyle} className='img-wrapper' key={'wrap-' + index}>
             <Carousel showStatus={false} showIndicators={false} showThumbs={false} swipeable={false}>
-                { images.urls ? images.urls.map(this.renderImage) : this.renderImage(images.url) }
+                { images.urls ? images.urls.map(this.renderImage.bind(this)) : this.renderImage(images.url) }
             </Carousel>
         </div>;
     }
@@ -41,8 +66,8 @@ export default class ImageGrid extends React.Component {
     /**
      * Render a row in the imagegrid given a list of objects structured as above.
      */
-    renderRow(images) {
-        return <div className='image-grid-row'>
+    renderRow(images, index) {
+        return <div className='image-grid-row' key={'row-' + index}>
             { images.map(this.renderWrapper) }
         </div>
     }
