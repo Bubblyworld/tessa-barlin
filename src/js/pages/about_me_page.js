@@ -11,14 +11,22 @@ export default class AboutMePage extends React.Component {
                 <img className='about-me-image' src='img/aboutme.jpg'/>
 
                 <div className="about-me-underlay">
-                    <h1>My name's Tessa Barlin.</h1>
+                    <h1>A piece of glass is what connects me to the world.</h1>
 
                     <p>
-                        I'm a photographer and documentary author currently working in Cape Town,
-                        South Africa. I have a passion for nature and people, especially when it
-                        comes to the way they interact and socialise. I started taking photographs
-                        when I was a highschooler in Timbuktu - at the time, it was just a hobby,
-                        but it has since grown into a full-time occupation for me.
+                        My name is Tessa. I’m a photographer and cinematographer with an intrinsic love for nature, a keen eye for details and a passion for visual storytelling.
+                    </p>
+
+                    <p>
+                        There’s something spiritual about photography. It’s both a form of expression, and a way of understanding the world. It’s art - and it has endless possibilities.
+                    </p>
+
+                    <p>
+                        I’d always wanted to be a conservationist. Growing up I was convinced I’d become a scientist when I was older. But I first picked up a camera when I was around 9 years old, and fell in love instantly. I’d photograph everything from people to plants, and I was intrigued by how one could portray the world in an infinite number of ways through a single frame. However, I never considered this a viable career path until mid way through my university degree when I realised that photography and conservation needn’t be mutually exclusive. Thus began my journey towards wildlife cinematography. I now have a postgraduate degree in film production, and have thus far shot two professional short films - both fiction film and nature documentary. I run my own photography business shooting weddings, portraiture, events and the like, while at the same time working in the film industry.
+                    </p>
+
+                    <p>
+                        Due to the multidisciplinary nature of my profession, you’ll find elements of both wildlife and portraiture in my photography. My style is natural, vibrant and emanates emotion. In my opinion, all wedding photos should be candid, and all wildlife photos should have elements of humanity in them. As I always say, every shot should tell a story because photography and cinematography are first and foremost about storytelling.
                     </p>
 
                     <h2>

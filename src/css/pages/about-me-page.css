@@ -8,7 +8,7 @@ gray:   #2C403D
     text-align: center;
     position: relative;
 
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 
     background-color: #2C403D;
@@ -19,19 +19,17 @@ gray:   #2C403D
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    height: 100%;
 }
 
 .about-me-page h1 {
     font-family: 'Signika Negative', sans-serif;
-    font-size: 17pt;
+    font-size: 16pt;
     color: #C49365;
 }
 
 .about-me-page h2 {
     font-family: 'Signika Negative', sans-serif;
-    font-size: 13pt;
+    font-size: 12pt;
 
     padding-bottom: 40px;
 
@@ -40,7 +38,7 @@ gray:   #2C403D
 
 .about-me-page p {
     font-family: 'Libre Baskerville', serif;
-    font-size: 10pt;
+    font-size: 8pt;
     color: #C49365;
 
     line-height: 1.5;
@@ -50,11 +48,12 @@ gray:   #2C403D
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: justify;
 }
 
 .about-me-image {
     z-index: 1;
-    
+
     width: 150px;
     padding-top: 20px;
 
@@ -75,15 +74,15 @@ gray:   #2C403D
 
 @media only screen and (max-width: 500px) {
     .about-me-page h1 {
-        font-size: 14pt
+        font-size: 12pt
     }
 
     .about-me-page p {
-        font-size: 8pt;
+        font-size: 6pt;
     }
 
     .about-me-page h2 {
-        font-size: 10pt;
+        font-size: 9pt;
     }
 }
 
