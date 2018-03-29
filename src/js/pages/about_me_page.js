@@ -32,27 +32,27 @@ export default class AboutMePage extends React.Component {
                     <h2>
                         Check out my Nature and Portraiture galleries!
                     </h2>
-                </div>
-            </div>
 
-            <div className='about-me-social-media'>
-                <a className='fa-stack fa-2x' href='https://web.facebook.com/tessabarlin.photography/'>
-                    <span className='fas fa-circle fa-stack-2x facebook'/>
-                    <span className='fab fa-facebook fa-stack-1x fa-inverse'/>
-                </a>
+                    <div className='about-me-social-media'>
+                        <a className='fa-stack fa-2x' href='https://web.facebook.com/tessabarlin.photography/'>
+                            <span className='fas fa-circle fa-stack-2x facebook'/>
+                            <span className='fab fa-facebook fa-stack-1x fa-inverse'/>
+                        </a>
 
-                <a className='fa-stack fa-2x'>
-                    <span className='fas fa-circle fa-stack-2x twitter'/>
-                    <span className='fab fa-twitter fa-stack-1x fa-inverse'/>
-                </a>
+                        <a className='fa-stack fa-2x'>
+                            <span className='fas fa-circle fa-stack-2x twitter'/>
+                            <span className='fab fa-twitter fa-stack-1x fa-inverse'/>
+                        </a>
 
-                <a className='fa-stack fa-2x' href='https://www.instagram.com/tessabarlin_photography/'>
-                    <span className='fas fa-circle fa-stack-2x instagram'/>
-                    <span className='fab fa-instagram fa-stack-1x fa-inverse'/>
-                </a>
+                        <a className='fa-stack fa-2x' href='https://www.instagram.com/tessabarlin_photography/'>
+                            <span className='fas fa-circle fa-stack-2x instagram'/>
+                            <span className='fab fa-instagram fa-stack-1x fa-inverse'/>
+                        </a>
 
-                <div className="copyright">
-                    Copyright © {currentYear} <br/> Tessa Barlin
+                        <div className="copyright">
+                            Copyright © {currentYear} <br/> Tessa Barlin
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>;

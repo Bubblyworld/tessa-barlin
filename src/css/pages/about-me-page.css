@@ -31,8 +31,6 @@ gray:   #2C403D
     font-family: 'Signika Negative', sans-serif;
     font-size: 12pt;
 
-    padding-bottom: 40px;
-
     color: #C49365;
 }
 
@@ -87,21 +85,14 @@ gray:   #2C403D
 }
 
 .about-me-social-media {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
     display: flex;
     justify-content: space-around;
 
-    padding: 10px 50px;
-
+    padding: 30px 0;
     width: 100%;
-
-    box-shadow: -5px -5px 10px -4px #1d2d2b;
-    background-color: #253634;
-    border-radius: 3px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-me-social-media a {
