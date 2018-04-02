@@ -49,7 +49,8 @@ for data in image_data:
 index = 0
 for aspect in aspect_map:
     dirname = str(aspect)
-    os.mkdir(dirname)
+    if not os.path.exists(dirname):
+        os.mkdir(dirname)
 
     for data in aspect_map[aspect]:
         shutil.move(data, dirname)

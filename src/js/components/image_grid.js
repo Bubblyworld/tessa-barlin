@@ -47,14 +47,13 @@ export default class ImageGrid extends React.Component {
      *      height: height of the source images
      * }
      */
-    renderWrapper(images, index) {
-        let aspectRatio = images.width / images.height;
+    renderWrapper(images, index, isSingle) {
+        let aspectRatio = isSingle ? 1.0 : images.width / images.height;
+
         let wrapperStyle = {
             flexGrow: aspectRatio,
             flexShrink: aspectRatio
         };
-
-
 
         return <div style={wrapperStyle} className='img-wrapper' key={'wrap-' + index}>
             <Carousel showStatus={false} showIndicators={false} showThumbs={false} swipeable={false}>
@@ -68,7 +67,7 @@ export default class ImageGrid extends React.Component {
      */
     renderRow(images, index) {
         return <div className='image-grid-row' key={'row-' + index}>
-            { images.map(this.renderWrapper) }
+            { images.map((image, index) => this.renderWrapper(image, index, images.length == 1)) }
         </div>
     }
 
