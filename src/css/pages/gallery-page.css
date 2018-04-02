@@ -81,7 +81,7 @@ gray:   #2C403D
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 160px;
+    top: 180px;
 
     width: 200px;
     margin: 0 auto;
@@ -89,6 +89,18 @@ gray:   #2C403D
     font-family: 'Libre Baskerville', serif;
     font-size: 8pt;
     color: #C49365;
+}
+
+@media only screen and (max-width: 500px) {
+    .gallery-text {
+        margin-top: 10px;
+        position: static;
+
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
 }
 
 .gallery-page .logo {
