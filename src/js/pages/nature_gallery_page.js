@@ -5,7 +5,7 @@ export default class NatureGalleryPage extends React.Component {
     render() {
         let text   = <div>NATURE<br/>GALLERY</div>;
         let logo   = 'img/elephant_logo_gold.png';
-        let story  = 'I love elephants, and other nature things like forests.';
+        let story  = 'Nature meets art.';
         let images = [
             [
                 { urls: ['img/nature/1-1-1.jpg', 'img/nature/1-1-2.jpg', 'img/nature/1-1-3.jpg'], width: 2500, height: 1667 }
