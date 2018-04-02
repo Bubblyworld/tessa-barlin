@@ -1,4 +1,30 @@
 const path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+var live = process.env.NODE_ENV == 'production';
+
+var plugins = []
+if (live) plugins.push(new ExtractTextPlugin({filename: "style.css"}))
+
+var cssLoader;
+if (live) {
+    cssLoader = ExtractTextPlugin.extract({
+        fallback: "style-loader",
+        use: "css-loader"
+    });
+} else {
+    cssLoader = [
+        {
+            loader: 'style-loader'
+        },
+        {
+            loader: 'css-loader',
+            options: {
+                sourceMap: true
+            }
+        }
+    ];
+}
 
 const config = {
     entry: './src/index.js',
@@ -15,6 +41,8 @@ const config = {
         historyApiFallback: true
     },
 
+    plugins: plugins,
+
     module: {
         rules: [
             {
@@ -29,20 +57,10 @@ const config = {
             },
             {
                 test: /\.css$/,
-                use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    }
-                ]
+                use: cssLoader
             }
         ]
-    }
+    },
 };
 
 module.exports = config;
