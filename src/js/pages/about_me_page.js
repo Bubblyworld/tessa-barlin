@@ -4,7 +4,7 @@ import '../../css/pages/about-me-page.css';
 
 export default class AboutMePage extends React.Component {
     onContact() {
-        alert('test');
+        alert('Need to set up email.');
     }
 
     render() {

@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import '../../css/components/navbar.css';
 
 export default class NavBar extends React.Component {
+    scrollToAbout() {
+        let about = document.getElementById('about');
+        about.scrollIntoView();
+    }
+
     render() {
         return <div className='nav'>
             <Link to='/nature' className='nav-item nav-nature'>
@@ -14,7 +19,7 @@ export default class NavBar extends React.Component {
                 <span className='line'/>
             </div>
 
-            <Link to='#about' className='nav-item'>
+            <Link to='#about' onClick={this.scrollToAbout} className='nav-item'>
                 <span className='drop-caps'>A</span>BOUT
             </Link>
 
