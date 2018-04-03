@@ -3,6 +3,10 @@ import React from 'react';
 import '../../css/pages/about-me-page.css';
 
 export default class AboutMePage extends React.Component {
+    onContact() {
+        alert('test');
+    }
+
     render() {
         var currentYear = new Date().getFullYear();
 
@@ -10,7 +14,7 @@ export default class AboutMePage extends React.Component {
             <div className="about-me-centre">
                 <img className='about-me-image' src='img/aboutme.jpg'/>
 
-                <div className="about-me-underlay">
+                <div className="about-me-underlay about-me-centre">
                     <h1>A piece of glass is what connects me to the world.</h1>
 
                     <p>
@@ -30,18 +34,24 @@ export default class AboutMePage extends React.Component {
                     </p>
 
                     <h2>
-                        Check out my Nature and Portraiture galleries!
+                        Book me for a shoot!
                     </h2>
+
+                    <div className='about-me-contact'>
+                        <form name='contact' onSubmit={this.onContact}>
+                            <input type='text' defaultValue='Your name.'/>
+                            <textarea defaultValue='Your message.'/>
+
+                            <button type='submit'>
+                                <i>Contact</i>
+                            </button>
+                        </form>
+                    </div>
 
                     <div className='about-me-social-media'>
                         <a className='fa-stack fa-2x' href='https://web.facebook.com/tessabarlin.photography/'>
                             <span className='fas fa-circle fa-stack-2x facebook'/>
                             <span className='fab fa-facebook fa-stack-1x fa-inverse'/>
-                        </a>
-
-                        <a className='fa-stack fa-2x'>
-                            <span className='fas fa-circle fa-stack-2x twitter'/>
-                            <span className='fab fa-twitter fa-stack-1x fa-inverse'/>
                         </a>
 
                         <a className='fa-stack fa-2x' href='https://www.instagram.com/tessabarlin_photography/'>
