@@ -22,6 +22,10 @@ body {
     overflow:hidden;
 }
 
+html, body {
+    height: 100%;
+}
+
 /*
 brown: #C49365
 gray:   #2C403D

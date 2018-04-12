@@ -14,21 +14,29 @@ export default class ImageGrid extends React.Component {
         this.renderRow = this.renderRow.bind(this);
     }
 
-    loader() {
-        return <div className='image-grid-spinner'>
+    loader(aspectRatio) {
+        var wrapperStyle = {
+            paddingTop: (100.0 / aspectRatio) + '%'
+        };
+
+        return <div className='image-grid-spinner' style={wrapperStyle}>
             <div className='center-spinner'>
                 <ClipLoader loading={true} color={'#C49365'}/>
             </div>
         </div>;
     }
 
-    unloader() {
+    unloader(aspectRatio) {
+        var wrapperStyle = {
+            paddingTop: (100.0 / aspectRatio) + '%'
+        };
+
         var style = {
             fontSize: '60px',
             color: '#C49365'
         };
 
-        return <div className='image-grid-spinner'>
+        return <div className='image-grid-spinner' style={wrapperStyle}>
             <div className='center-spinner'>
                 <span style={style} className='fas fa-exclamation'/>
             </div>
@@ -36,8 +44,13 @@ export default class ImageGrid extends React.Component {
     }
 
 
-    renderImage(url, index) {
-        return <Img key={'img-' + index} src={url} unloader={this.unloader()} loader={this.loader()}/>;
+    renderImage(url, aspectRatio, index) {
+        return <Img
+            key={'img-' + index}
+            src={url}
+            unloader={this.unloader(aspectRatio)}
+            loader={this.loader(aspectRatio)}
+        />;
     }
 
     /**
@@ -49,16 +62,19 @@ export default class ImageGrid extends React.Component {
      * }
      */
     renderWrapper(images, index, isSingle) {
-        let aspectRatio = isSingle ? 1.0 : images.width / images.height;
+        let aspectRatio = images.width / images.height;
 
+        // Single images we need to expand to fill the screen.
         let wrapperStyle = {
-            flexGrow: aspectRatio,
-            flexShrink: aspectRatio
+            flexGrow: isSingle ? 1.0 : aspectRatio,
+            flexShrink: isSingle ? 1.0 : aspectRatio
         };
 
         return <div style={wrapperStyle} className='img-wrapper' key={'wrap-' + index}>
             <Carousel showStatus={false} showIndicators={false} showThumbs={false} swipeable={false}>
-                { images.urls ? images.urls.map(this.renderImage.bind(this)) : this.renderImage(images.url) }
+                { images.urls ?
+                    images.urls.map((url, index) => this.renderImage(url, aspectRatio, index)) :
+                    this.renderImage(images.url, aspectRatio) }
             </Carousel>
         </div>;
     }
