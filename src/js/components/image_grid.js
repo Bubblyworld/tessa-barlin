@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'react-image';
+import ReactLoadImage from 'react-load-image';
 import { ClipLoader } from 'react-spinners';
 import { Carousel } from 'react-responsive-carousel';
 
@@ -45,12 +45,17 @@ export default class ImageGrid extends React.Component {
 
 
     renderImage(url, aspectRatio, index) {
-        return <Img
-            key={'img-' + index}
-            src={url}
-            unloader={this.unloader(aspectRatio)}
-            loader={this.loader(aspectRatio)}
-        />;
+        // return <Img
+        //     key={'img-' + index}
+        //     src={url}
+        //     unloader={this.unloader(aspectRatio)}
+        //     loader={this.loader(aspectRatio)}
+        // />;
+        return <ReactLoadImage key={'img-' + index} src={url}>
+            <img/>
+            {this.unloader(aspectRatio)}
+            {this.loader(aspectRatio)}
+        </ReactLoadImage>
     }
 
     /**
