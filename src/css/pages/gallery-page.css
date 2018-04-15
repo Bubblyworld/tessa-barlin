@@ -35,6 +35,7 @@ gray:   #2C403D
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 
     /* Fix weird bug where transforms move div 1p. */
     backface-visibility: hidden;

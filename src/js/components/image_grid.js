@@ -45,12 +45,6 @@ export default class ImageGrid extends React.Component {
 
 
     renderImage(url, aspectRatio, index) {
-        // return <Img
-        //     key={'img-' + index}
-        //     src={url}
-        //     unloader={this.unloader(aspectRatio)}
-        //     loader={this.loader(aspectRatio)}
-        // />;
         return <ReactLoadImage key={'img-' + index} src={url}>
             <img/>
             {this.unloader(aspectRatio)}

@@ -2,3 +2,4 @@ node_modules
 *.log
 mocks
 build/img/*
+.DS_Store
