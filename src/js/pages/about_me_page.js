@@ -6,9 +6,11 @@ export default class AboutMePage extends React.Component {
     onContact(event) {
         var name = document.getElementById("contact-name").value;
         var email = document.getElementById("contact-email").value;
-        var message = document.getElementById("contact-message").value;
-        var timestamp = new Date().toString();
+        var message = document.getElementById("contact-message")
+            .value
+            .replace(/\n\r?/g, '<br />');
 
+        var timestamp = new Date().toString();
         var subject = `Booking from ${name}`;
         var body = `
             <html>
@@ -79,9 +81,9 @@ export default class AboutMePage extends React.Component {
 
                     <div className='about-me-contact'>
                         <form name='contact'>
-                            <input id="contact-name" type="text" defaultValue="Your name."/>
-                            <input id="contact-email" type="email" defaultValue="Your email."/>
-                            <textarea id="contact-message" defaultValue="Your message."/>
+                            <input id="contact-name" type="text" placeholder="Your name."/>
+                            <input id="contact-email" type="email" placeholder="your.email@example.com"/>
+                            <textarea id="contact-message" placeholder="Send me a message!"/>
 
                             <button onClick={this.onContact}>
                                 <i>Contact</i>
