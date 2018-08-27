@@ -69,8 +69,11 @@ export default class ImageGrid extends React.Component {
             flexShrink: isSingle ? 1.0 : aspectRatio
         };
 
+        // If there are multiple images, show the indicators, else don't.
+        let showIndicators = images.urls ? (images.urls.length > 1) : false;
+
         return <div style={wrapperStyle} className='img-wrapper' key={'wrap-' + index}>
-            <Carousel showStatus={false} showIndicators={false} showThumbs={false} swipeable={false}>
+            <Carousel showStatus={false} showIndicators={showIndicators} showThumbs={false} swipeable={false}>
                 { images.urls ?
                     images.urls.map((url, index) => this.renderImage(url, aspectRatio, index)) :
                     this.renderImage(images.url, aspectRatio) }

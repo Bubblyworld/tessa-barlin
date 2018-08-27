@@ -2,4 +2,6 @@ node_modules
 *.log
 mocks
 build/img/*
+build/*
+!build/index.html
 .DS_Store

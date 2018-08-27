@@ -25,6 +25,7 @@ def name_and_size(info):
     height = info[2].split('x')[1]
     return [name, int(row), int(col), int(img), int(width), int(height)]
 image_data = map(name_and_size, image_data)
+image_data = sorted(image_data, key=lambda x: (x[1], x[2], x[3]))
 
 # Group the rows.
 index = 0

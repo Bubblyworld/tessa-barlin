@@ -32,18 +32,15 @@ export default class AboutMePage extends React.Component {
 
         Email.send(
             "bookings@tessabarlin.co.za",
-            "guy.paterson.jones@gmail.com",
+            "bookings@tessabarlin.co.za",
             subject,
             body,
-            "mail.tessabarlin.co.za",
-            "bookings@tessabarlin.co.za",
-            "Keiko12honey15!"
+            {token: '1408e038-16f6-4e7e-8522-f15d85477761'}
         );
-
-        //b58379bd-d841-4baa-8015-3fa9fe9ecd79
 
         // Prevent redirects/scrolls/refreshes on button click.
         event.preventDefault();
+        alert('Thank you for the message!')
         return false;
     }
 
