@@ -11,14 +11,14 @@ export default class PortraitureGalleryPage extends React.Component {
                 { urls: ['img/portraiture/1-1-1.jpg', 'img/portraiture/1-1-2.jpg', 'img/portraiture/1-1-3.jpg'], width: 1667, height: 2500 }
             ],
             [
-                { urls: ['img/portraiture/2-1-1.jpg', 'img/portraiture/2-1-2.jpg'], width: 1731, height: 2500 }
+                { urls: ['img/portraiture/2-1-1.jpg', 'img/portraiture/2-1-2.jpg'], width: 1677, height: 2500 }
             ],
             [
                 { urls: ['img/portraiture/3-1-1.jpg'], width: 1667, height: 2500 },
                 { urls: ['img/portraiture/3-2-1.jpg', 'img/portraiture/3-2-2.jpg', 'img/portraiture/3-2-3.jpg'], width: 1667, height: 2500 }
             ],
             [
-                { urls: ['img/portraiture/4-1-1.jpg', 'img/portraiture/4-1-2.jpg'], width: 1664, height: 2386 }
+                { urls: ['img/portraiture/4-1-1.jpg', 'img/portraiture/4-1-2.jpg'], width: 1576, height: 2325 }
             ],
             [
                 { urls: ['img/portraiture/5-1-1.jpg'], width: 2500, height: 1722 }
