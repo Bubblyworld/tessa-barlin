@@ -3,6 +3,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var live = process.env.NODE_ENV == 'production';
 
+// Run web pack with --optimize-minimize for minified build.
+
 var plugins = []
 if (live) plugins.push(new ExtractTextPlugin({filename: "style.css"}))
 
